@@ -13,6 +13,8 @@ async function writeExcelTest(searchText, replaceText, change, filePath) {
 }
 
 // This does no async work, so don't mark it async.
+// It returns an object with the row and column of the cell that matches the searchText.
+
 function readExcel(worksheet, searchText) {
     let output = { row: -1, column: -1 };
     worksheet.eachRow((row, rowNumber) => {
