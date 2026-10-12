@@ -14,6 +14,7 @@ async function writeExcelTest(searchText, replaceText, change, filePath) {
 
 // This does no async work, so don't mark it async.
 // It returns an object with the row and column of the cell that matches the searchText.
+// This is used to find the cell that we want to update in the writeExcelTest function.
 
 function readExcel(worksheet, searchText) {
     let output = { row: -1, column: -1 };
